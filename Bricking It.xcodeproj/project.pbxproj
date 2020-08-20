@@ -11,18 +11,19 @@
 		5E06F2B524ED661D0030BFE6 /* Shared.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5E06F29E24ED661C0030BFE6 /* Shared.xcdatamodeld */; };
 		5E06F2B624ED661D0030BFE6 /* Bricking_ItApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E06F2A024ED661C0030BFE6 /* Bricking_ItApp.swift */; };
 		5E06F2B724ED661D0030BFE6 /* Bricking_ItApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E06F2A024ED661C0030BFE6 /* Bricking_ItApp.swift */; };
-		5E06F2B824ED661D0030BFE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E06F2A124ED661C0030BFE6 /* ContentView.swift */; };
-		5E06F2B924ED661D0030BFE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E06F2A124ED661C0030BFE6 /* ContentView.swift */; };
+		5E06F2B824ED661D0030BFE6 /* ThemeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E06F2A124ED661C0030BFE6 /* ThemeList.swift */; };
+		5E06F2B924ED661D0030BFE6 /* ThemeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E06F2A124ED661C0030BFE6 /* ThemeList.swift */; };
 		5E06F2BA24ED661D0030BFE6 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E06F2A224ED661C0030BFE6 /* Persistence.swift */; };
 		5E06F2BB24ED661D0030BFE6 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E06F2A224ED661C0030BFE6 /* Persistence.swift */; };
 		5E06F2BC24ED661D0030BFE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E06F2A324ED661D0030BFE6 /* Assets.xcassets */; };
 		5E06F2BD24ED661D0030BFE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E06F2A324ED661D0030BFE6 /* Assets.xcassets */; };
+		5E06F2CA24EDD2130030BFE6 /* SetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E06F2C924EDD2130030BFE6 /* SetList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5E06F29F24ED661C0030BFE6 /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		5E06F2A024ED661C0030BFE6 /* Bricking_ItApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bricking_ItApp.swift; sourceTree = "<group>"; };
-		5E06F2A124ED661C0030BFE6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5E06F2A124ED661C0030BFE6 /* ThemeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeList.swift; sourceTree = "<group>"; };
 		5E06F2A224ED661C0030BFE6 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		5E06F2A324ED661D0030BFE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E06F2A824ED661D0030BFE6 /* Bricking It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bricking It.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,6 +31,7 @@
 		5E06F2B024ED661D0030BFE6 /* Bricking It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bricking It.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E06F2B224ED661D0030BFE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E06F2B324ED661D0030BFE6 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		5E06F2C924EDD2130030BFE6 /* SetList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +65,10 @@
 		5E06F29D24ED661C0030BFE6 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				5E06F2C624EDA6650030BFE6 /* Models */,
 				5E06F2A024ED661C0030BFE6 /* Bricking_ItApp.swift */,
-				5E06F2A124ED661C0030BFE6 /* ContentView.swift */,
+				5E06F2A124ED661C0030BFE6 /* ThemeList.swift */,
+				5E06F2C924EDD2130030BFE6 /* SetList.swift */,
 				5E06F2A224ED661C0030BFE6 /* Persistence.swift */,
 				5E06F2A324ED661D0030BFE6 /* Assets.xcassets */,
 				5E06F29E24ED661C0030BFE6 /* Shared.xcdatamodeld */,
@@ -96,6 +100,13 @@
 				5E06F2B324ED661D0030BFE6 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		5E06F2C624EDA6650030BFE6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,8 +208,9 @@
 			files = (
 				5E06F2B424ED661D0030BFE6 /* Shared.xcdatamodeld in Sources */,
 				5E06F2BA24ED661D0030BFE6 /* Persistence.swift in Sources */,
+				5E06F2CA24EDD2130030BFE6 /* SetList.swift in Sources */,
 				5E06F2B624ED661D0030BFE6 /* Bricking_ItApp.swift in Sources */,
-				5E06F2B824ED661D0030BFE6 /* ContentView.swift in Sources */,
+				5E06F2B824ED661D0030BFE6 /* ThemeList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,7 +221,7 @@
 				5E06F2B524ED661D0030BFE6 /* Shared.xcdatamodeld in Sources */,
 				5E06F2BB24ED661D0030BFE6 /* Persistence.swift in Sources */,
 				5E06F2B724ED661D0030BFE6 /* Bricking_ItApp.swift in Sources */,
-				5E06F2B924ED661D0030BFE6 /* ContentView.swift in Sources */,
+				5E06F2B924ED661D0030BFE6 /* ThemeList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
