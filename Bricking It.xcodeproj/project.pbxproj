@@ -18,6 +18,11 @@
 		5E06F2BC24ED661D0030BFE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E06F2A324ED661D0030BFE6 /* Assets.xcassets */; };
 		5E06F2BD24ED661D0030BFE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E06F2A324ED661D0030BFE6 /* Assets.xcassets */; };
 		5E06F2CA24EDD2130030BFE6 /* SetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E06F2C924EDD2130030BFE6 /* SetList.swift */; };
+		5E5692B424F06556007FA6DD /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5692B324F06556007FA6DD /* Search.swift */; };
+		5E5692B524F06556007FA6DD /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5692B324F06556007FA6DD /* Search.swift */; };
+		5E6E8CE324F064800044AA7D /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6E8CE224F064800044AA7D /* Main.swift */; };
+		5E6E8CE424F064800044AA7D /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6E8CE224F064800044AA7D /* Main.swift */; };
+		5EAB4ED624EFEEAB0034934F /* ModelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAB4ED524EFEEAB0034934F /* ModelExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,9 @@
 		5E06F2B224ED661D0030BFE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E06F2B324ED661D0030BFE6 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		5E06F2C924EDD2130030BFE6 /* SetList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetList.swift; sourceTree = "<group>"; };
+		5E5692B324F06556007FA6DD /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		5E6E8CE224F064800044AA7D /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		5EAB4ED524EFEEAB0034934F /* ModelExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,12 +73,14 @@
 		5E06F29D24ED661C0030BFE6 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				5E06F2C624EDA6650030BFE6 /* Models */,
 				5E06F2A024ED661C0030BFE6 /* Bricking_ItApp.swift */,
-				5E06F2A124ED661C0030BFE6 /* ThemeList.swift */,
-				5E06F2C924EDD2130030BFE6 /* SetList.swift */,
+				5E6E8CE224F064800044AA7D /* Main.swift */,
 				5E06F2A224ED661C0030BFE6 /* Persistence.swift */,
+				5E5692B324F06556007FA6DD /* Search.swift */,
+				5E06F2C924EDD2130030BFE6 /* SetList.swift */,
+				5E06F2A124ED661C0030BFE6 /* ThemeList.swift */,
 				5E06F2A324ED661D0030BFE6 /* Assets.xcassets */,
+				5E06F2C624EDA6650030BFE6 /* Models */,
 				5E06F29E24ED661C0030BFE6 /* Shared.xcdatamodeld */,
 			);
 			path = Shared;
@@ -105,6 +115,7 @@
 		5E06F2C624EDA6650030BFE6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5EAB4ED524EFEEAB0034934F /* ModelExtensions.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -207,9 +218,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E06F2B424ED661D0030BFE6 /* Shared.xcdatamodeld in Sources */,
+				5EAB4ED624EFEEAB0034934F /* ModelExtensions.swift in Sources */,
 				5E06F2BA24ED661D0030BFE6 /* Persistence.swift in Sources */,
 				5E06F2CA24EDD2130030BFE6 /* SetList.swift in Sources */,
 				5E06F2B624ED661D0030BFE6 /* Bricking_ItApp.swift in Sources */,
+				5E5692B424F06556007FA6DD /* Search.swift in Sources */,
+				5E6E8CE324F064800044AA7D /* Main.swift in Sources */,
 				5E06F2B824ED661D0030BFE6 /* ThemeList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,8 +232,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E6E8CE424F064800044AA7D /* Main.swift in Sources */,
 				5E06F2B524ED661D0030BFE6 /* Shared.xcdatamodeld in Sources */,
 				5E06F2BB24ED661D0030BFE6 /* Persistence.swift in Sources */,
+				5E5692B524F06556007FA6DD /* Search.swift in Sources */,
 				5E06F2B724ED661D0030BFE6 /* Bricking_ItApp.swift in Sources */,
 				5E06F2B924ED661D0030BFE6 /* ThemeList.swift in Sources */,
 			);

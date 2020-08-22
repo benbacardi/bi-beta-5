@@ -13,7 +13,7 @@ struct Bricking_ItApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ThemeList()
+            Main()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

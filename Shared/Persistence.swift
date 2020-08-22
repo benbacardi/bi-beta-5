@@ -27,7 +27,7 @@ struct ThemeFixture {
         newItem.subthemeCount = Int32(subthemeCount)
         newItem.yearTo = Int32(yearTo)
         newItem.yearFrom = Int32(yearFrom)
-        newItem.favourite = [true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false].randomElement()!
+        newItem.favourite = theme == "Architecture" ? true : [true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false].randomElement()!
         return newItem
     }
     
@@ -252,7 +252,7 @@ let previewThemeData = [
 let previewSetData = [
     BricksetSetFixture(setID: 28503, number: "21043", numberVariant: 1, name: "San Francisco", year: 2019, themeName: "Architecture", themeGroup: "Model making", subtheme: "Skylines", category: "Normal", released: true, pieces: 565, minifigs: nil, bricksetURL: "https://brickset.com/sets/21043-1", rating: 0.0, reviewCount: 0, packagingType: "Box", availability: "Retail", instructionsCount: 2, additionalImageCount: 5, imageURL: "https://images.brickset.com/sets/images/21043-1.jpg", thumbnailURL: "https://images.brickset.com/sets/small/21043-1.jpg"),
     BricksetSetFixture(setID: 28502, number: "21044", numberVariant: 1, name: "Paris", year: 2019, themeName: "Architecture", themeGroup: "Model making", subtheme: "Skylines", category: "Normal", released: true, pieces: 649, minifigs: nil, bricksetURL: "https://brickset.com/sets/21044-1", rating: 5.0, reviewCount: 1, packagingType: "Box", availability: "Retail", instructionsCount: 2, additionalImageCount: 5, imageURL: "https://images.brickset.com/sets/images/21044-1.jpg", thumbnailURL: "https://images.brickset.com/sets/small/21044-1.jpg"),
-    BricksetSetFixture(setID: 29037, number: "21045", numberVariant: 1, name: "Trafalgar Square", year: 2019, themeName: "Architecture", themeGroup: "Model making", subtheme: "Landmark Series", category: "Normal", released: true, pieces: 1197, minifigs: nil, bricksetURL: "https://brickset.com/sets/21045-1", rating: 5.0, reviewCount: 1, packagingType: "Box", availability: "Retail - limited", instructionsCount: 2, additionalImageCount: 7, imageURL: "https://images.brickset.com/sets/images/21045-1.jpg", thumbnailURL: "https://images.brickset.com/sets/small/21045-1.jpg"),
+    BricksetSetFixture(setID: 29037, number: "SQUARE", numberVariant: 1, name: "Trafalgar Square", year: 2019, themeName: "Architecture", themeGroup: "Model making", subtheme: "Landmark Series", category: "Normal", released: true, pieces: 1197, minifigs: nil, bricksetURL: "https://brickset.com/sets/21045-1", rating: 5.0, reviewCount: 1, packagingType: "Box", availability: "Retail - limited", instructionsCount: 2, additionalImageCount: 7, imageURL: "https://images.brickset.com/sets/images/21045-1.jpg", thumbnailURL: "https://images.brickset.com/sets/small/21045-1.jpg"),
     BricksetSetFixture(setID: 29036, number: "21046", numberVariant: 1, name: "Empire State Building", year: 2019, themeName: "Architecture", themeGroup: "Model making", subtheme: "Landmark Series", category: "Normal", released: true, pieces: 1767, minifigs: nil, bricksetURL: "https://brickset.com/sets/21046-1", rating: 5.0, reviewCount: 4, packagingType: "Box", availability: "Retail - limited", instructionsCount: 2, additionalImageCount: 4, imageURL: "https://images.brickset.com/sets/images/21046-1.jpg", thumbnailURL: "https://images.brickset.com/sets/small/21046-1.jpg"),
     BricksetSetFixture(setID: 29875, number: "21055", numberVariant: 1, name: "Burj Khalifa", year: 2019, themeName: "Architecture", themeGroup: "Model making", subtheme: "Landmark Series", category: "Normal", released: true, pieces: 333, minifigs: nil, bricksetURL: "https://brickset.com/sets/21055-1", rating: 0.0, reviewCount: 0, packagingType: "Box", availability: "Retail - limited", instructionsCount: 1, additionalImageCount: 0, imageURL: "https://images.brickset.com/sets/images/21055-1.jpg", thumbnailURL: "https://images.brickset.com/sets/small/21055-1.jpg"),
     BricksetSetFixture(setID: 29744, number: "21051", numberVariant: 1, name: "Tokyo", year: 2020, themeName: "Architecture", themeGroup: "Model making", subtheme: "Skylines", category: "Normal", released: true, pieces: 547, minifigs: nil, bricksetURL: "https://brickset.com/sets/21051-1", rating: 0.0, reviewCount: 0, packagingType: "Box", availability: "Retail - limited", instructionsCount: 2, additionalImageCount: 4, imageURL: "https://images.brickset.com/sets/images/21051-1.jpg", thumbnailURL: "https://images.brickset.com/sets/small/21051-1.jpg"),
@@ -260,7 +260,7 @@ let previewSetData = [
     BricksetSetFixture(setID: 29940, number: "21054", numberVariant: 1, name: "The White House", year: 2020, themeName: "Architecture", themeGroup: "Model making", subtheme: "Landmark Series", category: "Normal", released: true, pieces: 1483, minifigs: nil, bricksetURL: "https://brickset.com/sets/21054-1", rating: 0.0, reviewCount: 0, packagingType: "Box", availability: "Retail - limited", instructionsCount: 2, additionalImageCount: 14, imageURL: "https://images.brickset.com/sets/images/21054-1.jpg", thumbnailURL: "https://images.brickset.com/sets/small/21054-1.jpg"),
     BricksetSetFixture(setID: 29778, number: "30366", numberVariant: 1, name: "Police Car", year: 2020, themeName: "City", themeGroup: "Modern day", subtheme: "Police", category: "Normal", released: true, pieces: 37, minifigs: 1, bricksetURL: "https://brickset.com/sets/30366-1", rating: 0.0, reviewCount: 0, packagingType: "Polybag", availability: "Retail - limited", instructionsCount: 2, additionalImageCount: 0, imageURL: "https://images.brickset.com/sets/images/30366-1.jpg", thumbnailURL: "https://images.brickset.com/sets/small/30366-1.jpg"),
     BricksetSetFixture(setID: 29779, number: "30367", numberVariant: 1, name: "Police Helicopter", year: 2020, themeName: "City", themeGroup: "Modern day", subtheme: "Police", category: "Normal", released: true, pieces: 39, minifigs: 1, bricksetURL: "https://brickset.com/sets/30367-1", rating: 4.0, reviewCount: 1, packagingType: "Polybag", availability: "Retail - limited", instructionsCount: 2, additionalImageCount: 0, imageURL: "https://images.brickset.com/sets/images/30367-1.jpg", thumbnailURL: "https://images.brickset.com/sets/small/30367-1.jpg"),
-    BricksetSetFixture(setID: 29780, number: "30368", numberVariant: 1, name: " Fire Rescue Water Scooter", year: 2020, themeName: "City", themeGroup: "Modern day", subtheme: "Fire", category: "Normal", released: true, pieces: 33, minifigs: 1, bricksetURL: "https://brickset.com/sets/30368-1", rating: 4.0, reviewCount: 1, packagingType: "Polybag", availability: "Retail - limited", instructionsCount: 2, additionalImageCount: 0, imageURL: "https://images.brickset.com/sets/images/30368-1.jpg", thumbnailURL: "https://images.brickset.com/sets/small/30368-1.jpg"),
+    BricksetSetFixture(setID: 29780, number: "30368", numberVariant: 1, name: "Fire Rescue Water Scooter", year: 2020, themeName: "City", themeGroup: "Modern day", subtheme: "Fire", category: "Normal", released: true, pieces: 33, minifigs: 1, bricksetURL: "https://brickset.com/sets/30368-1", rating: 4.0, reviewCount: 1, packagingType: "Polybag", availability: "Retail - limited", instructionsCount: 2, additionalImageCount: 0, imageURL: "https://images.brickset.com/sets/images/30368-1.jpg", thumbnailURL: "https://images.brickset.com/sets/small/30368-1.jpg"),
     BricksetSetFixture(setID: 29781, number: "30369", numberVariant: 1, name: "Beach Buggy", year: 2020, themeName: "City", themeGroup: "Modern day", subtheme: nil, category: "Normal", released: true, pieces: 45, minifigs: 1, bricksetURL: "https://brickset.com/sets/30369-1", rating: 5.0, reviewCount: 1, packagingType: "Polybag", availability: "Retail - limited", instructionsCount: 2, additionalImageCount: 0, imageURL: "https://images.brickset.com/sets/images/30369-1.jpg", thumbnailURL: "https://images.brickset.com/sets/small/30369-1.jpg"),
     BricksetSetFixture(setID: 30213, number: "30370", numberVariant: 1, name: "Diver", year: 2020, themeName: "City", themeGroup: "Modern day", subtheme: nil, category: "Normal", released: true, pieces: 22, minifigs: 1, bricksetURL: "https://brickset.com/sets/30370-1", rating: 0.0, reviewCount: 0, packagingType: "Polybag", availability: "Retail - limited", instructionsCount: 2, additionalImageCount: 0, imageURL: "https://images.brickset.com/sets/images/30370-1.jpg", thumbnailURL: "https://images.brickset.com/sets/small/30370-1.jpg"),
     BricksetSetFixture(setID: 29797, number: "40372", numberVariant: 1, name: "Police MF Accessory Set", year: 2020, themeName: "City", themeGroup: "Modern day", subtheme: "Police", category: "Normal", released: true, pieces: 42, minifigs: 4, bricksetURL: "https://brickset.com/sets/40372-1", rating: 3.0, reviewCount: 1, packagingType: "Blister pack", availability: "LEGO exclusive", instructionsCount: 1, additionalImageCount: 1, imageURL: "https://images.brickset.com/sets/images/40372-1.jpg", thumbnailURL: "https://images.brickset.com/sets/small/40372-1.jpg"),
@@ -319,9 +319,9 @@ struct PersistenceController {
         for theme in previewThemeData {
             let _ = theme.toTheme(viewContext)
         }
-//        for set in previewSetData {
-//            let _ = set.toBricksetSet(viewContext)
-//        }
+        for set in previewSetData {
+            let _ = set.toBricksetSet(viewContext)
+        }
         
         do {
             try viewContext.save()
@@ -358,22 +358,22 @@ struct PersistenceController {
             }
         })
         
-        
-        for theme in previewThemeData {
-            let _ = theme.toTheme(container.viewContext)
-        }
+//
+//        for theme in previewThemeData {
+//            let _ = theme.toTheme(container.viewContext)
+//        }
 //        for set in previewSetData {
 //            let _ = set.toBricksetSet(container.viewContext)
 //        }
-        
-        do {
-            try container.viewContext.save()
-        } catch {
-            // Replace this implementation with code to handle the error appropriately.
-            // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-            let nsError = error as NSError
-            fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-        }
+//
+//        do {
+//            try container.viewContext.save()
+//        } catch {
+//            // Replace this implementation with code to handle the error appropriately.
+//            // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+//            let nsError = error as NSError
+//            fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+//        }
         
     }
 }
